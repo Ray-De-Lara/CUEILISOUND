@@ -286,16 +286,17 @@ width: 100%;
 
     }
     #sec2{
-        background: rgb(235,233,110);
-        background: linear-gradient(180deg, rgba(235,233,110,1) 0%, rgba(0,0,0,1) 54%); 
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 48%, rgba(28,57,201,1) 98%); ; 
+
     }
     #sec2 p{
         margin: 10vh 0 0 6vw ;
         font-size: 12vw;
     }
     #slider-container{
-        margin: 30vh 0 0 0vw;
-        width: 60%;
+        margin: 25vh 0 0 0vw;
+        width: 80%;
 
     }
     #logo{
@@ -305,16 +306,18 @@ width: 100%;
       width: 90vw;
     }
     #sec3{
+        /* background: rgb(235,233,110);
+        background: linear-gradient(180deg, rgba(235,233,110,1) 0%, rgba(0,0,0,1) 54%); */
         background: rgb(0,0,0);
-        background: linear-gradient(180deg, rgba(0,0,0,1) 48%, rgba(28,57,201,1) 98%); ; 
+        background: linear-gradient(180deg, rgba(0,0,0,1) 51%, rgba(235,233,110,1) 100%); 
         }
     #sec3 p{
         margin: 10vh 0 0 6vw ;
         font-size: 12vw;
     }
     #slider-containerxv{
-        margin: 30vh 0 0 0vw;
-        width: 60%;
+        margin: 25vh 0 0 0vw;
+        width: 80%;
     }
     #logoxv{
         margin: 47vh 0 0 0 ;
