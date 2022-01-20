@@ -17,6 +17,9 @@ html{
 body{
     margin: 0;
 }
+.meta{
+    display: none;
+}
 #encabezado{
     display: flex;
     position: fixed;
