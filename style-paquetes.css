@@ -47,9 +47,11 @@ label{
     display: none;
 }
 #navigation{
+    margin-top: 3vh;
     margin-left: 10vh;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    min-height: 100vh;   
 }
 #navigation a{
     font-family: 'Source Serif 4', sans-serif;
@@ -63,7 +65,8 @@ label{
 #navigation a:hover{
     border-radius: 10px;
     background-color:rgba(99, 102, 95, 0.1);
-    color: var(--grey);
+    color: var(--red);
+    transition-duration: 1s;
 }
 
 #packs{
@@ -156,7 +159,7 @@ label{
 #card-one{
     text-align: center;
     width: 18vw;
-    height: 45vh;
+    height: 50vh;
     background-color: var(--black);
     border-radius: 10px;
     color: var(--white);
@@ -213,14 +216,14 @@ label{
 #card-two{
     text-align: center;
     width: 18vw;
-    height: 45vh;
+    height: 60vh;
     background-color: var(--black);
     border-radius: 10px;
     color: var(--white);
     position: relative;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     transition: 1s;
     overflow: hidden;
     text-decoration: none;
@@ -295,7 +298,7 @@ label{
         display: grid;
     }
     #card-one{
-        margin: 2vh;
+        margin: 2vh 0 2vh 0;
         width: 50vw;
         height: 20vh;
 
@@ -306,7 +309,7 @@ label{
 
     }
     #mid-pack-name{
-        font-size: 4vw;
+        font-size: 3.7vw;
     }
     .list-elements-container{
         font-size: 2vw;
