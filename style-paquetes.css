@@ -47,11 +47,9 @@ label{
     display: none;
 }
 #navigation{
-    margin-top: 3vh;
     margin-left: 10vh;
     display: flex;
-    align-items: center; 
-    min-height: 100vh;   
+    align-items: center;    
 }
 #navigation a{
     font-family: 'Source Serif 4', sans-serif;
@@ -268,6 +266,7 @@ label{
     }
     #title{
         display:block;
+        min-height: 100vh;
         align-items: center;
         margin-left: 15vw;
         color: var(--white);
