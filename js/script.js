@@ -37,103 +37,57 @@ $("#sec3").bind('DOMMouseScroll',function(e){
 
 })
 
+function slider(name, nextName, prevName){
+	//Slider BODAS
+	//almacenar slider en una variable
+	var slider = $('#'+name);
+	//almacenar botones
+	var siguiente = $('#'+nextName);
+	var anterior = $('#'+prevName);
 
-//Slider BODAS
-//almacenar slider en una variable
-var slider = $('#slider');
-//almacenar botones
-var siguiente = $('#btn-next');
-var anterior = $('#btn-prev');
+	//mover ultima imagen al primer lugar
+	$('#'+name + 'section:last').insertBefore('#'+name +' section:first');
+	//mostrar la primera imagen con un margen de -100%
+	slider.css('margin-left', '-'+100+'%');
 
-//mover ultima imagen al primer lugar
-$('#slider section:last').insertBefore('#slider section:first');
-//mostrar la primera imagen con un margen de -100%
-slider.css('margin-left', '-'+100+'%');
+	function moverD() {
+		slider.animate({
+			marginLeft:'-'+200+'%'
+		} ,700, function(){
+			$('#'+name+' section:first').insertAfter('#' +name + ' section:last');
+			slider.css('margin-left', '-'+100+'%');
+		});
+	}
 
-function moverD() {
-	slider.animate({
-		marginLeft:'-'+200+'%'
-	} ,700, function(){
-		$('#slider section:first').insertAfter('#slider section:last');
-		slider.css('margin-left', '-'+100+'%');
-	});
-}
+	function moverI() {
+		slider.animate({
+			marginLeft:0
+		} ,700, function(){
+			$('#'+name + ' section:last').insertBefore('#' + name + ' section:first');
+			slider.css('margin-left', '-'+100+'%');
+		});
+	}
 
-function moverI() {
-	slider.animate({
-		marginLeft:0
-	} ,700, function(){
-		$('#slider section:last').insertBefore('#slider section:first');
-		slider.css('margin-left', '-'+100+'%');
-	});
-}
-
-function autoplay() {
-	interval = setInterval(function(){
+	function autoplay() {
+		interval = setInterval(function(){
+			moverD();
+		}, 5000);
+	}
+	siguiente.on('click',function() {
 		moverD();
-	}, 5000);
-}
-siguiente.on('click',function() {
-	moverD();
-	clearInterval(interval);
-	autoplay();
-});
-
-anterior.on('click',function() {
-	moverI();
-	clearInterval(interval);
-	autoplay();
-});
-
-
-autoplay();
-
-//Slider XV
-//almacenar slider en una variable
-var sliderxv = $('#sliderxv');
-//almacenar botones
-var siguientexv = $('#btn-nextxv');
-var anteriorxv = $('#btn-prevxv');
-
-//mover ultima imagen al primer lugar
-$('#sliderxv section:last').insertBefore('#sliderxv section:first');
-//mostrar la primera imagen con un margen de -100%
-sliderxv.css('margin-left', '-'+100+'%');
-
-function moverDxv() {
-	sliderxv.animate({
-		marginLeft:'-'+200+'%'
-	} ,700, function(){
-		$('#sliderxv section:first').insertAfter('#sliderxv section:last');
-		sliderxv.css('margin-left', '-'+100+'%');
+		clearInterval(interval);
+		autoplay();
 	});
-}
 
-function moverIxv() {
-	sliderxv.animate({
-		marginLeft:0
-	} ,700, function(){
-		$('#sliderxv section:last').insertBefore('#sliderxv section:first');
-		sliderxv.css('margin-left', '-'+100+'%');
+	anterior.on('click',function() {
+		moverI();
+		clearInterval(interval);
+		autoplay();
 	});
+
+
+	autoplay();
 }
 
-function autoplayxv() {
-	interval = setInterval(function(){
-		moverDxv();
-	}, 5000);
-}
-siguientexv.on('click',function() {
-	moverDxv();
-	clearInterval(interval);
-	autoplayxv();
-});
-
-anteriorxv.on('click',function() {
-	moverIxv();
-	clearInterval(interval);
-	autoplayxv();
-});
-
-
-autoplayxv();
+slider("slider","btn-next","btn-prev")
+slider("sliderxv","btn-nextxv","btn-prevxv")
