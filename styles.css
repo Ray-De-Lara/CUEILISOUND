@@ -242,7 +242,7 @@ width: 100%;
         position: inherit;
     }
     #title{
-        display:ruby;
+        display:block;
         align-items: center;
         margin-left: 15vw;
         color: var(--white);
