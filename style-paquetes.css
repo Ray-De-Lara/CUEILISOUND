@@ -266,7 +266,6 @@ label{
     }
     #title{
         display:block;
-        min-height: 100vh;
         align-items: center;
         margin-left: 15vw;
         color: var(--white);
@@ -274,6 +273,7 @@ label{
     label{
         display: block;
         cursor: pointer;
+        /* min-height: 100vh; */
     }
     
     #navigation{
@@ -298,19 +298,37 @@ label{
     }
     #card-one{
         margin: 2vh 0 2vh 0;
-        width: 50vw;
-        height: 20vh;
+        width: 90vw;
+        height: 40vh;
 
+    }
+    .icon{
+        font-size: 15vw;
+    }
+    #pack-name{
+        font-size: 6vw;
+    }
+    #btn-seemore{
+        font-size: 8vw;
     }
     #card-two{
-        width: 50vw;
-        height: 25vh;
+        width: 90vw;
+        height: 48vh;
 
     }
+    #happy-face{
+        font-size: 15vw;
+    }
     #mid-pack-name{
-        font-size: 3.7vw;
+        font-size: 6vw;
+    }
+    #price{
+        font-size: 10vw;
+    }
+    #mid-btn-seemore{
+        font-size: 8vw;
     }
     .list-elements-container{
-        font-size: 2vw;
+        font-size: 4vw;
     }
 }
