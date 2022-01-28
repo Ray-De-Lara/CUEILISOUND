@@ -91,3 +91,6 @@ function slider(name, nextName, prevName){
 
 slider("slider","btn-next","btn-prev")
 slider("sliderxv","btn-nextxv","btn-prevxv")
+
+
+

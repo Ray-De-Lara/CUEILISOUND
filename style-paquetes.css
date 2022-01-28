@@ -154,7 +154,7 @@ label{
 
 /* animacion de las tarjetas */
 /* CARD ONE ANIMATION */
-#card-one{
+.standar-card{
     text-align: center;
     width: 18vw;
     height: 50vh;
@@ -169,7 +169,7 @@ label{
     overflow: hidden;
     text-decoration: none;
 }
-#card-one:hover{
+.standar-card:hover{
    background: var(--clr);
     box-shadow: 0 0 10px var(--clr),
     0 0 30px var(--clr),
@@ -177,7 +177,7 @@ label{
     0 0 100px var(--clr);
 
 }
-#card-one::before{
+.standar-card::before{
     content: '';
     position: absolute;
     width: 160px;
@@ -186,7 +186,7 @@ label{
     transition: 1s;
     animation: animate 2s linear infinite;
 }
-#card-one:hover::before{
+.standar-card:hover::before{
     width: 120%;
 }
 
@@ -199,14 +199,14 @@ label{
     }
     
 }
-#card-one::after{
+.standar-card::after{
     content: '';
     position: absolute;
     inset: 4px;
     background: var(--black);
 
 }
-#card-one span{
+.standar-card span{
     z-index: 1;
 }
 
@@ -296,7 +296,7 @@ label{
     #cards{
         display: grid;
     }
-    #card-one{
+    .standar-card{
         margin: 2vh 0 2vh 0;
         width: 90vw;
         height: 40vh;
