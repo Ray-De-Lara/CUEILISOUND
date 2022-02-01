@@ -1,5 +1,5 @@
 :root{
-    --grey:#333;
+    --grey:#948f8f;
     --black:#000;
     --gold:#f5e582;
     --red:#ba1616;
@@ -67,37 +67,167 @@ label{
     transition-duration: 1s;
 }
 
-#people{
-    margin: 15vh 0 0 6vw;
-    color: var(--white);
+/*  */
+/* .hierarchy-level::before{
+    content: '';
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
 }
-.nuestro-equipo-text{
-    font-size: 2vw;
-    color: var(--white);
+#triangle{
+    background-color:var(--black);
+    width: 75px;
+    height: 150px;
+    margin-top: -53px;
+    margin-left: -10px;
+    position: absolute;
+    rotate: 45deg;
+    z-index: 1;
 }
+#triangle::before{
+    content: '';
+    background-color: var(--black);
+    position: absolute;
+    width: 78px;
+    height: 150px;
+    margin-left:100px ;
+    margin-top: -101px;
+    rotate: 85deg;
+} */
+/* .picture img{
+    display: flex;
+    border-radius: 6px;
+} */
+/* CARDS */
 .team{
     display: flex;
 }
-.person{
-margin: 0 1.5vw 0 1.5vw;    
-    
+.card {
+    /* width: 285px; */
+    margin: 150px 2vw 0 1vw;
+    border: 1px solid #7a7070;
+    background-color: #000000;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
 }
-.person p{
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+.card .card-header .profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid var(--blue);
+    box-shadow: 0 0 20px #00000033;
+}
+
+.card .card-header .profile-img:hover {
+    width: 140px;
+    height: 140px;
+    border: 8px solid var(--gold);
+}
+.card .card-body {
+    padding: 10px 40px;
+}
+
+.card .card-body .name {
+    margin-top: 30px;
+    font-size: 22px;
     font-weight: bold;
+    color: #5356e2;
 }
-.text{
+
+.card .card-body .name:hover {
+    margin-top: 30px;
+    font-size: 24px;
+    color: var(--gold);
+}
+
+.card .card-body .mail {
+    font-size: 14px;
+    color: #c2bdbd;
+    /* margin-left: -30px; */
+}
+
+.card .card-body .mail:hover {
+    font-size: 14.1px;
+    color: #ffffff;
+}
+
+.card .card-body .job {
+    color: var(--white);
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card .social-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card .social-links .social-icon {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--blue);
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 100%;
+    text-decoration: none;
+    margin: 0 13px 30px 0;
+}
 
+.card .social-links .social-icon:last-child {
+    margin-right: 0;
 }
-.hierarchy-level{
-    font-size: 1.5vw;
-    text-transform: uppercase;
+
+.card .social-links .social-icon:hover {
+    background-color: #000000;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
 }
-.picture img{
-    display: flex;
-    border-radius: 6px;
+.card .card-footer {
+    background-color: var(--blue);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px 0 20px 0;
+}
+
+.card .card-footer .count {
+    background-color: var(--blue);
+    border: none;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.card .card-footer .count a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.card .card-footer .count a:hover {
+    font-size: 20px;
+    background-color: var(--black);
+}
+.card .card-footer:hover {
+    background-color: var(--black);
 }
 
 @media (max-width: 700px) {
@@ -135,21 +265,30 @@ margin: 0 1.5vw 0 1.5vw;
 
     }
 
-    #people{
+    /* #people{
         margin: 0vh 0 0 6vw;
         color: var(--white);
 
     }
     .nuestro-equipo-text{
         font-size: 6vw;
+        color: var(--grey);
     }
     .hierarchy-level{
         font-size: 5vw;
     }
+
+    .picture img{
+        margin-left: 20vw;
+    } */
     .team{
         display: block;
     }
-    .picture img{
-        margin-left: 20vw;
+    .card {
+        width: 96%;
+    }
+
+    .card .card-body {
+        padding: 10px 20px;
     }
 }
