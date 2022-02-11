@@ -1,114 +1,85 @@
 :root{
-    --grey:#948f8f;
-    --black:#000;
-    --gold:#f5e582;
-    --red:#ba1616;
+    --black:#283539;
     --white:#f7f7f7;
-    --blue:#12204d;
-    --purple:#38287c;
+    --blue-main:#009dbc;
+    --blue-secondary:#068199;
 
 }
-html{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: var(--black);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    font-family:'Poppins',sans-serif ;
 }
 body{
-    margin: 0;
-}
-#encabezado{
     display: flex;
-    position: fixed;
-    background-color: transparent;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgb(186, 218, 228);
+  }
+  section{
+    position: relative;
     width: 100%;
-}
-#title{
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    margin-left: 5vh;
-    padding-right: 5px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-#title a{
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 100px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block ;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
     text-decoration: none;
-    color: var(--white);
 }
-#navigation-content{
-    display: flex;
-}
-#toggle{
-    display: none;
-}
-label{
+  label{
     margin: 0 40px 0 0;
     font-size: 26px;
     line-height: 70px;
     color: var(--white);
     display: none;
 }
-#navigation{
-    margin-left: 10vh;
-    display: flex;
-    align-items: center;
+#toggle{
+    display: none;
 }
-#navigation a{
-    font-family: 'Source Serif 4', sans-serif;
-    font-size: 22px;
-    color: var(--white);
-    padding: 6px;
-    margin: 7px;
-    
-    text-decoration: none
-}
-#navigation a:hover{
-    border-radius: 10px;
-    background-color:rgba(99, 102, 95, 0.1);
-    color: var(--red);
-    transition-duration: 1s;
-}
-
-/*  */
-/* .hierarchy-level::before{
-    content: '';
-    background-color: yellow;
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    z-index: -1;
-}
-#triangle{
-    background-color:var(--black);
-    width: 75px;
-    height: 150px;
-    margin-top: -53px;
-    margin-left: -10px;
-    position: absolute;
-    rotate: 45deg;
-    z-index: 1;
-}
-#triangle::before{
-    content: '';
-    background-color: var(--black);
-    position: absolute;
-    width: 78px;
-    height: 150px;
-    margin-left:100px ;
-    margin-top: -101px;
-    rotate: 85deg;
-} */
-/* .picture img{
-    display: flex;
-    border-radius: 6px;
-} */
 /* CARDS */
 .team{
     display: flex;
 }
+.nuestro-quipo-text{
+    position: relative;
+}
 .card {
     /* width: 285px; */
+    min-width: 250px;
     margin: 150px 2vw 0 1vw;
-    border: 1px solid #7a7070;
-    background-color: #000000;
+    /* border: 1px solid #7a7070; */
+    background-color: var(--blue-secondary);
     box-shadow: 0 10px 90px #00000024;
     text-align: center;
     font-size: 20px;
@@ -126,14 +97,14 @@ label{
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 8px solid var(--blue);
+    border: 8px solid var #333;
     box-shadow: 0 0 20px #00000033;
 }
 
 .card .card-header .profile-img:hover {
     width: 140px;
     height: 140px;
-    border: 8px solid var(--gold);
+    border: 8px solid var #333;
 }
 .card .card-body {
     padding: 10px 40px;
@@ -143,7 +114,7 @@ label{
     margin-top: 30px;
     font-size: 22px;
     font-weight: bold;
-    color: #5356e2;
+    color: #333;
 }
 
 .card .card-body .name:hover {

@@ -7,110 +7,44 @@
     <link rel="stylesheet" href="style-paquetes.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
     <link rel="shortcut icon" href="/media/LOGO.ico" type="image/x-icon">
+    <script src="./js/https _code.jquery.com_jquery-3.6.0.js"></script>
+
     <title>Cue Ilisound | Audio e Iluminacion</title>
 </head>
 <body>
-    <header id="encabezado">
-        <div id="title">
-            <h1> <a href="index.html">CUE ILISOUND</a></h1>
-            <!-- <img src="./media/logo.png" alt="LOGO" width="150"> -->
-        </div>
-        <div id="navigation-content">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <nav id="navigation">
-                <a href="#">PAQUETES</a>
-                <a href="./quienes-somos.html">QUIENES SOMOS</a>
-                <a href="#">CONTACTO</a>
-            </nav>
-        </div>      
-    </header>
-    <h2 id="packs">PAQUETES</h2>
-    <section id="cards">
-        <div class="standar-card" style="--clr:#12204d;">
-            <span>
-            <div class="icon"><i class="fas fa-microphone"></i></div>
-            <div id="pack-name">PAQUETE KARAOKE</div>
-            <p id="price">$3,000MXN</p>
-            <div class="list-elements-container">
-                <ul class="list-elements">
-                    <li>2</li>
-                    <li>1</li>
-                    <li>3</li>
-                    <li>6</li>
-                    <li>1</li>
-                </ul>
-                <ul>
-                    <li>satelitales</li>
-                    <li>subwoofer</li>
-                    <li>microfonos</li>
-                    <li>par RGBW</li>
-                    <li>camara de humo</li>
-                </ul>
-            </div>
-            <div id="btn-seemore-container">
-                <input id="btn-seemore"type="button" value="Ver mas">
-            </div>
-        </span>
-        </div>
-        <!-- tarjeta central -->
-        <div id="card-two" style="--clr:#f5e582;">
-            <span>
-            <div id="happy-face"><i class="far fa-smile-beam"></i></i></div>
-            <div id="mid-pack-name">PAQUETE ENFIESTES</div>
-            <p id="price">$4,200MXN</p>
-            <div class="list-elements-container">
-                <ul class="list-elements">
-                    <li>4</li>
-                    <li>2</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>6</li>
-                    <li>1</li>
-                    <li>1</li>
-                </ul>
-                <ul>
-                    <li>satelitales</li>
-                    <li>subwoofer</li>
-                    <li>cabina Dj iluminada</li>
-                    <li>microfonos</li>
-                    <li>par RGBW</li>
-                    <li>camara de humo</li>
-                    <li>porteria de iluminacion</li>
-                </ul>
-            </div>
-            <div id="btn-seemore-container">
-                <input id="mid-btn-seemore"type="button" value="Ver mas">
-            </div>
-        </span>
-    </div>
-    <!-- tercer tarjeta -->
-    <div class="standar-card" style="--clr:#12204d;">
-        <span>
-        <div class="icon"><i class="fas fa-headphones-alt"></i></div>
-        <div id="pack-name">PAQUETE DIVIERTAS</div>
-        <p id="price">$3,500MXN</p>
-        <div class="list-elements-container">
-            <ul class="list-elements">
-                <li>2</li>
-                <li>1</li>
-                <li>3</li>
-                <li>6</li>
-                <li>1</li>
-            </ul>
+    <section>
+        <header class="encabezado">
+            <a href="./index.html"><img src="./media/logo.png" alt="logo"  class="logo"></a>
             <ul>
-                <li>satelitales</li>
-                <li>subwoofer</li>
-                <li>microfonos</li>
-                <li>par RGBW</li>
-                <li>camara de humo</li>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <li><a href="./paquetes.html">PAQUETES</a></li>
+                <li><a href="./quienes-somos.html">QUIENES SOMOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
             </ul>
+        </header>
+
+        <div class="container">
+          <div class="price">$3000</div>
+          <div class="content">
+            <ul>
+              <li>2 satelitales</li>
+              <li>1 subwoofer</li>
+              <li>3 microfonos</li>
+            </ul>
+          </div>
+          <div class="more-content">
+            <ul>
+              <li>6 par RGBW</li>
+              <li>1 Camara de humo</li>
+            </ul>
+          </div>
+          <div class="getStarted">Solicitalo</div>
         </div>
-        <div id="btn-seemore-container">
-            <input id="btn-seemore"type="button" value="Ver mas">
-        </div>
-    </span>
-    </div>
-    </section>
+
+  
+      </section>
+
+    <script src="./js/script-paquetes.js"></script>
 </body>
 </html>
