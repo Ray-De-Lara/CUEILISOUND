@@ -122,3 +122,82 @@ header ul li a{
 .getStarted:hover{
   cursor: pointer; 
 }
+
+@media (max-width: 991px) {
+  header{
+      padding: 20px;
+
+  }
+  header .logo{
+      max-width: 60px;
+  }
+  header ul{
+      display: none;
+  }
+  .toggle{
+      position: relative;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background: url(./media/menu.png) ;
+      background-size: 30px;
+      background-repeat: no-repeat;
+      filter: invert(1);
+      z-index: 11;
+
+  }
+  .toggle.active{
+      position: fixed;
+      right: 20px;
+      background: url(./media/close.png) ;
+      background-size: 25px;
+      background-repeat: no-repeat;
+  }
+  header ul.navigation.active{
+      transition: 0.5s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #fff;
+      z-index: 10;
+
+  }
+  header ul li a{
+      font-size: 30px;
+      margin: 40px 0;
+  }
+  section{
+    padding: 0px;    
+}
+.container {
+
+  width: 100vw;
+  min-height: 15vh;
+}
+.container .price {
+  width: 75px;
+  font-size: 20px;
+}
+.price::before {
+  font-size: 13px;
+}
+.price::after {
+  font-size: 13px;
+}
+.content {
+  font-size: 10px;
+}
+.more-content {
+  font-size: 10px;
+}
+.getStarted {
+  padding: 8px 18px 8px 18px;
+  font-size: 12px;
+}
+}
