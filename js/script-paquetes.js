@@ -1,8 +1,116 @@
-var wrapper =$(".wrapper");
+var wrapper =$(".packet");
 
 const datos =[
     {
-        precio : 3000,
+        precio : "3,000",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "3,500",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "4,200",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "4,800",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "6,500",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "8,500",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "10,500",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
+
+    },
+	{
+        precio : "15,000",
+		content : [
+			"2 Satelitales",
+			"1 Subwoofer",
+			"3 Microfonos"
+		],
+		moreContent : [
+			"6 Par RGBW",
+			"1 Camara de Humo"
+		],
+		link : "Link"
 
     }
 ]
@@ -14,4 +122,7 @@ function toggleMenu(){
 }
 
 
-wrapper.append(' <div class="table basic"> <div class="price-section"> <div class="price-area"> <div class="inner-area"> <span class="text">$</span> <span class="price">3000</span> <span class="mxn">MXN</span> </div> </div> </div> <div class="package-name"></div> <ul class="features"> <li> <span class="list-name">2 Satelitales</span> </li> <li> <span class="list-name">1 Subwoofer</span> </li> <li> <span class="list-name">3 Microfonos</span> </li> <li> <span class="list-name">6 Par RGBW</span> </li> <li> <span class="list-name">1 Camara de humo</span> </li> </ul> <div class="btn"><button>Ver mas</button></div> </div>')
+$.map(datos, function(dato){
+	console.log(dato);
+	wrapper.append('<div class="container"> <div class="price">$'+dato.precio+'</div> <div class="content"> <ul> <li>'+dato.content[0]+'</li> <li>'+dato.content[1]+'</li> <li>'+dato.content[2]+'</li> </ul> </div> <div class="more-content"> <ul> <li>'+dato.moreContent[0]+'</li> <li>'+dato.moreContent[1]+'</li> </ul> </div> <div class="getStarted">Solicitalo</div> </div>'
+)})

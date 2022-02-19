@@ -1,4 +1,4 @@
-var team =$(".team")
+var team =$(".team");
 
 function toggleMenu(){
 	var menuToggle = document.querySelector('.toggle');
@@ -59,6 +59,3 @@ $.map(datos, function(dato){
 	team.append('<div class="card"> <div class="card-header"> <img src="'+dato.picture+'" alt="Integrante Cue Ilisound" class="profile-img"> </div><div class="card-body"> <p class="name">'+dato.nombre +'</p> <a href="mailto:'+dato.correo+'" class="mail">'+dato.correo +'</a><p class="job">'+dato.estudios +'</p></div><div class="social-links"> <a href="'+dato.github +'" class="fab fa-github social-icon" style="display:'+dato.displaygithub+'"></a> <a href="'+dato.twitter +'" class="fab fa-twitter social-icon" style="display:'+dato.displaytwitter+'"></a> <a href="'+dato.facebook +'" class="fab fa-facebook social-icon" style="display:'+dato.displayfacebook+'"></a> <a href="'+dato.linkedin +'" class="fab fa-linkedin social-icon" style="display:'+dato.displaylinkedin+'"></a> </div> <div class="card-footer"> <a href="'+dato.cv +'"></a> <button class="count"><a href="#">Conoceme</a></button> </div> </div>')
 })
 
-datos.map((dato)=>{
- console.log(dato.nombre)
-})

@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins',sans-serif ;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body{
     display: flex;
@@ -68,6 +68,15 @@ header ul li a{
 #toggle{
     display: none;
 }
+.packet{
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
 .container{
   background-color: #acf1ff;
   width: 100%;
@@ -76,6 +85,7 @@ header ul li a{
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 .price{
   width: 8vw;
@@ -174,6 +184,9 @@ header ul li a{
   }
   section{
     padding: 0px;    
+}
+.packet{
+  margin-top: 130px;
 }
 .container {
 
